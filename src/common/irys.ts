@@ -46,12 +46,8 @@ export default abstract class Irys {
 
   constructor({ url, network, arbundles }: { url?: string; network?: Network; arbundles: Arbundles }) {
     switch (network) {
-      // case undefined:
-      case "mainnet":
-        url = "https://arweave.mainnet.irys.xyz";
-        break;
-      case "devnet":
-        url = "https://arweave.devnet.irys.xyz";
+      case "testnet":
+        url = "https://testnet-upload.irys.xyz";
         break;
     }
     if (!url) throw new Error(`Missing required Irys constructor parameter: URL or valid Network`);
