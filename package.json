@@ -1,8 +1,8 @@
 {
-  "name": "@irys/sdk",
-  "version": "0.2.9",
-  "description": "JS client for Irys",
-  "repository": "https://github.com/Bundlr-Network/js-client.git",
+  "name": "@irys-network/bundler-sdk",
+  "version": "0.0.1",
+  "description": "JS client for bundlers deployed on the Irys Network",
+  "repository": "https://github.com/Irys-xyz/network-bundler-js-sdk.git",
   "author": "Irys",
   "license": "Apache-2.0",
   "main": "./build/cjs/cjsIndex.js",
