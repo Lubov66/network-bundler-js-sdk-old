@@ -19,7 +19,6 @@ testFolder-manifest.json
 testFolder-manifest.csv
 profiles
 src/__tests__/data
-arweave.json
 testData/
 testFolder-errors.txt
 bundlr-network-client-*.tgz

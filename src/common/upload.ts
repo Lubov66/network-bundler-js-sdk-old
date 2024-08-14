@@ -211,13 +211,13 @@ export class Uploader {
 
   /**
    * Creates & Uploads a [nested bundle](https://docs.bundlr.network/faqs/dev-faq#what-is-a-nested-bundle) from the provided list of transactions. \
-   * NOTE: If a provided transaction is unsigned, the transaction is signed using a temporary (throwaway) Arweave key. \
+   * NOTE: If a provided transaction is unsigned, the transaction is signed using a temporary (throwaway) key. \
    * This means transactions can be associated with a single "random" address. \
    * NOTE: If a Buffer is provided, it is converted into a transaction and then signed by the throwaway key. \
    * The throwaway key, address, and all bundled (provided + throwaway signed + generated) transactions are returned by this method.
    *
    * @param transactions List of transactions (DataItems/Raw data buffers) to bundle
-   * @param opts Standard upload options, plus the `throwawayKey` paramter, for passing your own throwaway JWK
+   * @param opts Standard upload options, plus the `throwawayKey` parameter, for passing your own throwaway JWK
    * @returns Standard upload response from the bundler node, plus the throwaway key & address, and the list of bundled transactions
    */
   uploadBundle(

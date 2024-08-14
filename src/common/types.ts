@@ -119,11 +119,11 @@ export type Manifest = {
 export type UploadResponse = {
   // The ID of the transaction
   id: string;
-  // The Arweave public key of the node that received the transaction
+  // The public key of the node that received the transaction
   public: string;
   // The signature of this receipt
   signature: string;
-  // the maximum expected Arweave block height for transaction inclusion
+  // the maximum expected block height for transaction inclusion
   deadlineHeight: number;
   // List of validator signatures
   validatorSignatures: { address: string; signature: string }[];

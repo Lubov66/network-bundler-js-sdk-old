@@ -130,7 +130,7 @@ export class Utils {
   }
 
   /**
-   * Polls for transaction confirmation (or at least pending status) - used for fast currencies (i.e not arweave)
+   * Polls for transaction confirmation (or at least pending status) - used for fast currencies
    * before posting the fund request to the server (so the server doesn't have to poll)
    * @param txid
    * @returns

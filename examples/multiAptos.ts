@@ -74,6 +74,6 @@ import { NodeIrys } from "../src/node";
   // check your irys balance after the upload
   console.log("irys balance", irys.utils.unitConverter(await irys.getLoadedBalance()).toString());
 
-  console.log(`Data uploaded to https://arweave.net/${res.id}`);
+  console.log(`Data uploaded to https://testnet-gateway.irys.xyz/${res.id}`);
   // done!
 })();

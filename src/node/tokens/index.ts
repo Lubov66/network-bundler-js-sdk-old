@@ -1,6 +1,5 @@
 import BigNumber from "bignumber.js";
 import type { NodeToken } from "../types";
-import ArweaveConfig from "./arweave";
 import ERC20Config from "./erc20";
 import EthereumConfig from "./ethereum";
 import NearConfig from "./near";
@@ -23,17 +22,6 @@ export default function getTokenConfig(
   opts?: any,
 ): NodeToken {
   switch (token) {
-    case "arweave":
-      return new ArweaveConfig({
-        irys: irys,
-        name: "arweave",
-        ticker: "AR",
-        minConfirm: 10,
-        providerUrl: providerUrl ?? "https://arweave.net",
-        wallet,
-        isSlow: true,
-        opts,
-      });
     case "ethereum":
       return new EthereumConfig({
         irys: irys,

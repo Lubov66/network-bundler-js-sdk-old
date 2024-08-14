@@ -12,7 +12,6 @@ import { EthereumEthersV5 } from "../providers/ethereum/ethersv5";
 import { EthereumEthersV6 } from "../providers/ethereum/ethersv6";
 import type { TokenConfig } from "../../common/types";
 import type BaseWebToken from "./base";
-import ArweaveConfig from "./arweave";
 import { augmentTokenPrivy } from "../shims/privy";
 import { augmentViemV2 } from "../shims/viemv2";
 import { Network } from "@aptos-labs/ts-sdk";
@@ -169,15 +168,7 @@ export default function getTokenConfig({
         wallet: wallet,
         opts,
       });
-    case "arweave":
-      return new ArweaveConfig({
-        irys: irys,
-        name: "arweave",
-        ticker: "AR",
-        providerUrl: providerUrl ?? "https://arweave.net",
-        wallet: wallet,
-        opts,
-      });
+
     case "base-eth":
       return resolveProvider({
         family: "ethereum",

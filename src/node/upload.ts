@@ -170,7 +170,7 @@ export class NodeUploader extends Uploader {
       await logFunction("Uploading JSON manifest...");
       const tags = [
         { name: "Type", value: "manifest" },
-        { name: "Content-Type", value: "application/x.arweave-manifest+json" },
+        { name: "Content-Type", value: "application/x.irys-manifest+json" },
         ...(manifestTags ?? []),
       ];
       const mres = await this.uploadData(createReadStream(jsonManifestPath), { tags }).catch((e) => {
