@@ -308,7 +308,7 @@ export class NodeUploader extends Uploader {
     createReadStream(csvPath).pipe(csvstrm); // pipe csv
     /* eslint-disable quotes */
     // "header"
-    wstrm.write(`{\n"manifest": "arweave/paths",\n"version": "0.1.0",\n"paths": {\n`);
+    wstrm.write(`{\n"manifest": "irys/paths",\n"version": "0.1.0",\n"paths": {\n`);
     const csvs = Readable.from(csvstrm);
     let firstValue = true;
 

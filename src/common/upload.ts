@@ -174,7 +174,7 @@ export class Uploader {
   public async generateManifest(config: { items: Map<string, string>; indexFile?: string }): Promise<Manifest> {
     const { items, indexFile } = config;
     const manifest: Manifest = {
-      manifest: "arweave/paths",
+      manifest: "irys/paths",
       version: "0.1.0",
       paths: {},
     };

@@ -110,7 +110,7 @@ export type Token = {
 };
 
 export type Manifest = {
-  manifest: string;
+  manifest: "irys/paths";
   version: string;
   paths: Record<string, Record<string, Record<"id", string>>>;
   index?: Record<"path", string>;
@@ -158,15 +158,6 @@ export type UploadOptions = { paidBy?: string };
 export enum UploadHeaders {
   PAID_BY = "x-irys-paid-by",
 }
-
-// // TS doesn't like string template literals it seems
-// export enum manifestType {
-//     paths = "arweave/paths"
-// }
-
-// export enum manifestVersion {
-//     "0.1.0" = "0.1.0"
-// }
 
 export type IrysTransactionCreateOptions = DataItemCreateOptions & { dataIsRawTransaction?: boolean };
 
