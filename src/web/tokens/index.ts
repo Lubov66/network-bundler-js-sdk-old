@@ -258,6 +258,17 @@ export default function getTokenConfig({
           opts,
         },
       });
+
+    case "eclipse":
+      // note: eclipse uses bridged eth, but denominated as lamports
+      return new SolanaConfig({
+        irys: irys,
+        name: "eclipse",
+        ticker: "ETH",
+        providerUrl: providerUrl ?? "https://mainnetbeta-rpc.eclipse.xyz",
+        wallet: wallet,
+        opts,
+      });
     default:
       throw new Error(`Unknown/Unsupported token ${token}`);
   }
