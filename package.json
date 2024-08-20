@@ -1,6 +1,6 @@
 {
-  "name": "@irys-network/bundler-sdk",
-  "version": "0.0.5",
+  "name": "@irys-network/bundler-client",
+  "version": "0.0.0",
   "description": "JS client for bundlers deployed on the Irys Network",
   "repository": "https://github.com/Irys-xyz/network-bundler-js-sdk.git",
   "author": "Irys",
